@@ -23,11 +23,11 @@ int pos1 = 0; int pos2 = 0; int pos3 = 0; int pos4 = 0; // 현재 위치 저장�
 int current_grade = 1; // 등수 부여용 변수
 int fin1 = 0; int fin2 = 0; int fin3 = 0; int fin4 = 0; // 골인 확인용 변수
 
-int money = 500;
+int money = 1000;
 int selected = 0;
 int FirstRank = 0; int SecondRank = 0;
 int bet = 0;
-int bestrecord = 500;
+int bestrecord = 1000;
 
 int main(void)
 {
@@ -240,7 +240,7 @@ void ResultProcess(void) // 결과 처리
 	GotoXY(40, 0);
 	if (FirstRank == selected) // 1위를 맞출경우
 	{
-		money += bet * 4; // 4배 지급
+		money += bet * 5; // 5배 지급
 		printf("1위를 적중하셨습니다.\n");
 	}
 	else if (SecondRank == selected) // 2위를 맞출경우
